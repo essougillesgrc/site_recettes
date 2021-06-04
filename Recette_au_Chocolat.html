@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Recette
+        </title>
+        <meta charset="utf-8">
+        
+        <!-- Pour charger le fichier css-->
+        <link rel = "stylesheet" href = "recette.css" />
+
+
+
+
+
+        <!-- Définir dans le head, un style à appliquer au body
+
+        <style>
+            /* Ici on traite tout le body*/
+            body{
+
+                /* Mettre une couleur de fond pour tout le body*/
+                background-color: #8BA1BB; 
+
+                /* Definir la police du texte*/
+                font-family: Arial; 
+            }
+
+            /* Ici on traite un paragraphe*/
+            /*p#monEntete {*/
+
+            p.monEntete {
+                /* Couleur de fond */
+                background-color:black;
+
+                /* Couleur du texte*/
+                color : white;
+                display:inline-block;
+                margin-top:  0px;
+                padding : 8px 18px;
+                margin-bottom: 0px;
+                font-weight: bold;
+                font-size : 16px;
+            }
+
+            div.monEntete {
+                margin-bottom: -18px;
+                margin-top:  40px;
+            }
+
+             div.contenu {
+                background-color: white;
+                margin : 0px 10% 80px 10%;
+                padding: 30px;
+                min-width: 350px;
+            }
+
+            h1 {
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 12;
+            }
+            
+            
+
+            p.description {  
+                text-align: center;
+                max-width: 400px;
+                display:inline-block;
+                font-size: 14px;
+            }
+        
+            .centrer { 
+                text-align: center;
+                width: 100%
+            }
+
+            div.separateur {
+                width: 100px;
+                height: 1px;
+                background-color: black;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            table.info {
+                position: absolute;
+                 bottom:0; 
+                 width: 100%; 
+                 color : white; 
+                 background-color: #6C8292C0; height:80px;
+            }
+            
+            
+            table.info td {
+                text-align: center;
+                font-size: 14px;
+                vertical-align: top;
+            }
+
+            table.info th {
+                font-size: 16px;
+                vertical-align: bottom;
+                padding-bottom: 4px;
+            }
+            
+
+            div.info {
+                position : relative;
+            }
+
+        </style>
+
+        -->
+
+
+
+    </head>
+
+
+
+
+    <body>
+        
+        
+
+
+        <div class = "contenu">
+
+             <!-- 
+            <p id = "monEntete"> Recette </p>
+            -->
+            <div class = "centrer monEntete">
+                <p class = "monEntete"> Recette </p>
+            </div>
+
+
+            <h1>
+                Gâteau au chocolat
+            </h1>
+
+            <div class = "separateur"> </div>
+
+            <div class = "centrer"> 
+                <p class = "description">
+                    « Cette recette facile du gâteau au chocolat est un grand classique. Elle fera plaisir aux plus gourmands. »
+                </p>
+           </div>
+
+
+            <div class = "info">
+                <img class = "centrer info" src="gateau.jpg">
+
+                <Table class = "info" >
+                    <tr>
+                        <th> Difficulté </th>
+                        <th> Préparation </th>
+                        <th> Cuisson </th>
+                        <th> Temps total </th>
+                    </tr>
+                    <tr>
+                        <td> Facile </td>
+                        <td> 10 min </td>
+                        <td> 25 min </td>
+                        <td> 35 min </td>
+                    </tr>
+
+
+                </Table>
+            </div>
+
+
+            <div>
+            
+                <div class = "colonne1 colonne">
+                    <h2>
+                        Ingredients
+                    </h2>
+
+                    <div class = "bordure">
+                        <p> Chocolat noir: 200g </p>
+                        <p> Sucre : 150 g </p>
+                        <p> Beurre : 200g </p>
+                        <p> Oeufs : 4 </p>
+                        <p> Farine : 80 g </p>
+                    </div>
+
+                    <!--
+                    <ul>
+                        <li> Chocolat noir: 200g </li>
+                        <li> Sucre : 150 g </li>
+                        <li> Beurre : 200g </li>
+                        <li> Oeufs : 4 </li>
+                        <li> Farine : 80 g </li>
+                    </ul>
+                    -->
+
+
+
+
+                </div>
+
+                <div class = "colonne2 colonne">
+                    <h2>
+                        Préparation
+                    </h2>
+
+
+                    <table class = "preparation">
+                        <tr>
+                            <td> <p class = "numero"> 1 </p> </td>
+                            <td class = "preparation_etape"> Faire fondre le chocolat avec le beurre </td>
+                        </tr>
+
+                        <tr>
+                            <td> <p class = "numero"> 2 </p> </td>
+                            <td class = "preparation_etape"> Mélanger le sucre, les oeufs et la farine </td>
+                        </tr>
+                        
+
+                        <tr>
+                            <td> <p class = "numero"> 3 </p> </td>
+                            <td class = "preparation_etape"> Mélanger le tout pour faire une pate  </td>
+                        </tr>
+
+                        <tr>
+                            <td> <p class = "numero"> 4 </p> </td>
+                            <td class = "preparation_etape"> Mettre au four </td>
+                        </tr>
+                    </table>
+
+                    <!-- 
+                    <ol>
+                        <li> Faire fondre le chocolat avec le beurre </li>
+                        <li> Mélanger le sucre, les oeufs et la farine </li>
+                        <li> Mélanger le tout pour faire une pate </li>
+                        <li> Mettre au four </li>
+                    </ol>
+                    -->
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

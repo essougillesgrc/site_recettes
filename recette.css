@@ -1,0 +1,176 @@
+
+/* Ici, les proprités définies pour * s'appliqueront à tout le contenu css et s'applique donc à toute la page html associée au fichier css*/
+* {
+    overflow:auto; /* Ppour gérer automatiquement les débordements sur la page html, afin de contenir tout ce qui déborde */
+
+}
+
+
+
+body{
+
+    /* Mettre une couleur de fond pour tout le body*/
+    background-color: #8BA1BB; 
+
+    /* Definir la police du texte*/
+    font-family: Arial; 
+}
+
+/* Ici on traite un paragraphe*/
+/*p#monEntete {*/
+
+p.monEntete {
+    /* Couleur de fond */
+    background-color:black;
+
+    /* Couleur du texte*/
+    color : white;
+    display:inline-block;
+    margin-top:  -15px;
+    padding : 8px 18px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size : 16px;
+}
+
+div.monEntete {
+    margin-bottom: 0px;
+    margin-top:  0px;
+    overflow: visible
+    
+}
+
+ div.contenu {
+    background-color: white;
+    margin : 60px 10% 80px 10%;
+    padding: 0px 30px 30px 30px;
+    min-width: 350px;
+    /*box-shadow: 1px 1px 5px gray;*/
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+    overflow: visible
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 12;
+}
+
+
+
+p.description {  
+    text-align: center;
+    max-width: 400px;
+    display:inline-block;
+    font-size: 14px;
+}
+
+.centrer { 
+    text-align: center;
+    width: 100%
+}
+
+div.separateur {
+    width: 100px;
+    height: 1px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.info {
+    position: absolute;
+     bottom:0; 
+     width: 100%; 
+     color : white; 
+     background-color: #6C829DC0; height:80px;
+}
+
+
+table.info td {
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+table.info th {
+    font-size: 16px;
+    vertical-align: bottom;
+    padding-bottom: 4px;
+}
+
+
+div.info {
+    position : relative;
+}
+
+
+img.info {
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+    min-height: 200px;
+    background-color: gray;
+
+}
+
+div.colonne {
+    width : 45%;
+    margin-top: 20px;
+}
+
+div.colonne h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 10px solid #6C829D ;
+    padding-bottom: 5px;
+}
+
+
+div.colonne1 {
+    display: inline-block;
+    margin-right: 10%;
+}
+
+div.colonne2 {
+    float: right; /* Pour afficher l'éléments à droite*/
+}
+
+div.bordure p {
+    border:1px solid lightgray;
+    margin:4px;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px 0;
+}
+
+table.preparation p.numero {
+    background-color: #6C829D;
+    color: white;
+    text-align: center;
+    width:25px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    box-sizing: border-box; /* cette propriété fait en sorte que les dimensions de la boîte contenant le texte ne changent pas quand on fait varier les marges à l'intérieur (padding)*/
+    padding-top: 5px;
+    border-radius: 50%; /*cela permet d'avoir un cercle. Si on avait mis un % plus petit, on aurait plutôt un quadrilatère à coins arrondis */
+    margin:0px;
+}
+
+table.preparation td {
+    vertical-align: top; /* Pour aligner verticalement vers le haut*/
+}
+
+table.preparation td.preparation_etape {
+    font-size: 14x;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+table.preparation tr {
+    height: 40px; /* Pour les éléments de table (notamment les tr (lignes)), il n'y a pas la propriété min-height ni max-height. La valeur donnée pour être est directement interprétée comme min-height*/
+}
+
+
