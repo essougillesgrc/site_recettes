@@ -40,11 +40,13 @@ div.monEntete {
     
 }
 
- div.contenu {
+div.contenu {
     background-color: white;
-    margin : 60px 10% 80px 10%;
-    padding: 0px 30px 30px 30px;
-    min-width: 350px;
+    margin : 40px 8% 40px 8%;
+    padding: 0px 8px 20px 8px;
+    /*min-width: 350px;*/
+
+
     /*box-shadow: 1px 1px 5px gray;*/
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
     overflow: visible
@@ -74,8 +76,12 @@ div.separateur {
     width: 100px;
     height: 1px;
     background-color: black;
-    margin-left: auto;
-    margin-right: auto;
+
+
+    /* Pour centrer un élément autre qu'un texte, on utilise margin-left: auto; et margin-right: auto; comme ci-dessous
+    */
+    margin-left: auto; /* Pour utiliser toute la marge à gauche */
+    margin-right: auto;/* Pour utiliser toute la marge à droite */
 }
 
 table.info {
@@ -83,18 +89,19 @@ table.info {
      bottom:0; 
      width: 100%; 
      color : white; 
-     background-color: #6C829DC0; height:80px;
+     background-color: #6C829DC0; 
+     height: 50px;
 }
 
 
 table.info td {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 
 table.info th {
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: bottom;
     padding-bottom: 4px;
 }
@@ -115,7 +122,7 @@ img.info {
 }
 
 div.colonne {
-    width : 45%;
+    width : 100%;
     margin-top: 20px;
 }
 
@@ -130,12 +137,16 @@ div.colonne h2 {
 
 div.colonne1 {
     display: inline-block;
-    margin-right: 10%;
+    /* margin-right: 10%; */
 }
 
-div.colonne2 {
-    float: right; /* Pour afficher l'éléments à droite*/
-}
+
+
+/* div.colonne2 {
+    /* Pour afficher l'éléments à droite*/
+    /* float: right; */
+/* }*/ 
+
 
 div.bordure p {
     border:1px solid lightgray;
@@ -174,3 +185,52 @@ table.preparation tr {
 }
 
 
+
+
+
+
+/* Styles pour ordinateurs, la largeur minimale de l'écran est de 768px */
+
+/* Pour un teléphone mobile, la largeur maximale est de 768px */
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        margin : 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+        min-width: 350px;
+    }
+    
+    table.info {
+        height:80px;
+    }
+
+    table.info td {
+        font-size: 14px;
+    }
+
+    table.info th {
+        font-size: 16px;
+    }
+
+    div.colonne {
+        width : 45%;
+    }
+     
+    div.colonne1 {
+        display: inline-block;
+        margin-right: 10%;
+    }
+
+    div.colonne2 {
+        float: right; /* Pour afficher l'éléments à droite*/
+    }
+
+}
+
+
+@media only screen and (min-width: 900px) {
+    div.contenu {
+        margin-left : auto;
+        margin-right : auto;
+        max-width: 645px;
+    }
+}
